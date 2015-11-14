@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Grady Algire</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Grady Algire</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Overview</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="https://github.com/gradyalgire" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/grady-algire-abb44a265/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="projects-layout">
+
+            <!-- Sticky sidebar -->
+            <aside class="projects-sidebar">
+                <p class="sidebar-label">// projects</p>
+                <nav class="project-nav">
+                    <a href="#Self-Improvement" class="project-nav-link active">
+                        <span class="nav-index">01</span>
+                        <span>Self Improvement</span>
+                    </a>
+                    <a href="#StockAnalysis" class="project-nav-link">
+                        <span class="nav-index">02</span>
+                        <span>Stock Analysis</span>
+                    </a>
+                    <a href="#p3" class="project-nav-link">
+                        <span class="nav-index">03</span>
+                        <span>Project Three</span>
+                    </a>
+                    <a href="#p4" class="project-nav-link">
+                        <span class="nav-index">04</span>
+                        <span>Project Four</span>
+                    </a>
+                    <a href="#p5" class="project-nav-link">
+                        <span class="nav-index">05</span>
+                        <span>Project Five</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Project sections -->
+            <div class="projects-content">
+
+                <article class="project-section" id="Self-Improvement">
+                    <div class="project-section-header">
+                        <div class="project-meta">
+                            <span class="project-index">01</span>
+                            <div class="project-badges">
+                                <span class="badge">Database</span>
+                                <span class="badge">Website</span>
+                                <span class="badge">Mental Health</span>
+                            </div>
+                        </div>
+                        <h2 class="project-section-title">Self-Improvement<br>Through Music</h2>
+                        <p class="project-section-desc">A curated platform using intentionally selected music to promote emotional regulation, discipline, and forward growth — not escapism.</p>
+                        <a href="https://selfimprovementthroughmusic.netlify.app/" target="_blank" class="project-link-btn">
+                            View Project <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-section-body">
+                        <div class="project-stack">
+                            <h3>// tech stack</h3>
+                            <ul>
+                                <li><span class="stack-label">Frontend</span> HTML, CSS, Javascript</li>
+                                <li><span class="stack-label">Backend</span> Netlify, Supabase</li>
+                                <li><span class="stack-label">Database</span> PostgreSQL</li>
+                                <li><span class="stack-label">Other</span> Spotify Embed API, Github</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-writeup">
+                            <div class="writeup-block">
+                                <h3>The Problem</h3>
+                                <p>Music strongly influences emotion and thought patterns, but during difficult periods people often default to content that reinforces avoidance, fixation, or emotional regression. I couldn't find music focused on genuine self-improvement — so I built a platform to share what I discovered and created a space where contributions can grow the playlist.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>The Solution</h3>
+                                <p>A manually curated, structured platform where songs are reviewed for emotional impact and long-term growth alignment before being added. The playlist dynamically pulls song data from Supabase with structured descriptions and triggers, while the recommendations page allows users to submit suggestions for intentional review — not automatic approval.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>Challenges</h3>
+                                <p>Designing a system that enforces intentional curation instead of automatic aggregation required careful planning of song metadata — descriptions, triggers, visual theming, and sort order — within a relational PostgreSQL schema. Dynamically rendering from Supabase while maintaining security, balancing emotional depth with clear scope boundaries, and building a calm, cohesive responsive design all added meaningful complexity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-section" id="StockAnalysis">
+                    <div class="project-section-header">
+                        <div class="project-meta">
+                            <span class="project-index">02</span>
+                            <div class="project-badges">
+                                <span class="badge">AI</span>
+                                <span class="badge">APIs</span>
+                                <span class="badge">Website</span>
+                            </div>
+                        </div>
+                        <h2 class="project-section-title">Stock<br>Analysis</h2>
+                        <p class="project-section-desc">An AI-powered stock analysis tool that combines financial data APIs with language model insights to help users make more informed investment decisions.</p>
+                        <a href="https://www.gradyalgirestockanalysis.com/" target="_blank" class="project-link-btn">
+                            View Project <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-section-body">
+                        <div class="project-stack">
+                            <h3>// tech stack</h3>
+                            <ul>
+                                <li><span class="stack-label">Frontend</span> HTML, CSS, Javascript</li>
+                                <li><span class="stack-label">Backend</span> Python, Flask</li>
+                                <li><span class="stack-label">APIs</span> Financial data, OpenAI</li>
+                                <li><span class="stack-label">Other</span> Github</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-writeup">
+                            <div class="writeup-block">
+                                <h3>The Problem</h3>
+                                <p>Retail investors are overwhelmed by financial data without clear context. Raw numbers from APIs are meaningless without analysis — and most tools are either too simple or too complex for someone learning to invest.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>The Solution</h3>
+                                <p>A web application that fetches real-time stock data and passes it through an AI layer to generate plain-English analysis, highlight key signals, and surface relevant context — making financial data accessible without oversimplifying it.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>Challenges</h3>
+                                <p>Coordinating multiple external APIs with rate limits and inconsistent response structures required robust error handling. Prompting the AI to give useful, accurate, and appropriately hedged financial commentary — without hallucinating data — was an ongoing design challenge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Placeholder projects -->
+                <article class="project-section project-placeholder" id="p3">
+                    <div class="placeholder-inner">
+                        <span class="project-index">03</span>
+                        <p>Project coming soon</p>
+                    </div>
+                </article>
+
+                <article class="project-section project-placeholder" id="p4">
+                    <div class="placeholder-inner">
+                        <span class="project-index">04</span>
+                        <p>Project coming soon</p>
+                    </div>
+                </article>
+
+                <article class="project-section project-placeholder" id="p5">
+                    <div class="placeholder-inner">
+                        <span class="project-index">05</span>
+                        <p>Project coming soon</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+        <footer>
+            <span>Built with HTML, CSS, JavaScript, Swiper.</span>
+            <div class="footer-socials">
+                <a href="https://github.com/gradyalgire" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/grady-algire-abb44a265/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <span>© 2026 Grady Algire. All rights reserved.</span>
+        </footer>
+    </main>
+
+    <script>
+        // Highlight active sidebar link on scroll
+        const sections = document.querySelectorAll('.project-section');
+        const navLinks = document.querySelectorAll('.project-nav-link');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    const active = document.querySelector(`.project-nav-link[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(s => observer.observe(s));
+    </script>
+    <script src="theme.js"></script>
+</body>
+</html>
