@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects — Grady Algire</title>
+    <title>Projects — Marco Gamboa</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,14 +11,14 @@
 <body>
     <main>
         <header>
-            <h1>Grady Algire</h1>
+            <h1>Marco Gamboa</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Overview</a></li>
                     <li><a href="projects.html" class="active">Projects</a></li>
                     <li><a href="experience.html">Experience</a></li>
-                    <li><a href="https://github.com/gradyalgire" target="_blank">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/grady-algire-abb44a265/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/techlabs53" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/marco-gamboa-48a4343c7" target="_blank">LinkedIn</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,25 +29,25 @@
             <aside class="projects-sidebar">
                 <p class="sidebar-label">// projects</p>
                 <nav class="project-nav">
-                    <a href="#Self-Improvement" class="project-nav-link active">
+                    <a href="#TelemetryUptrace" class="project-nav-link active">
                         <span class="nav-index">01</span>
-                        <span>Self Improvement</span>
+                        <span>Telemetry Uptrace</span>
                     </a>
-                    <a href="#StockAnalysis" class="project-nav-link">
+                    <a href="#SecureAccessIdentity" class="project-nav-link">
                         <span class="nav-index">02</span>
-                        <span>Stock Analysis</span>
+                        <span>AccessCore IAM System</span>
                     </a>
-                    <a href="#p3" class="project-nav-link">
+                    <a href="#CareFlowHealthOps" class="project-nav-link">
                         <span class="nav-index">03</span>
-                        <span>Project Three</span>
+                        <span>CareFlow HealthOps</span>
                     </a>
-                    <a href="#p4" class="project-nav-link">
+                    <a href="#Openship" class="project-nav-link">
                         <span class="nav-index">04</span>
-                        <span>Project Four</span>
+                        <span>SiteDeploy Commerce</span>
                     </a>
-                    <a href="#p5" class="project-nav-link">
+                    <a href="#CaseStudy" class="project-nav-link">
                         <span class="nav-index">05</span>
-                        <span>Project Five</span>
+                        <span>A ChatGPT ...</span>
                     </a>
                 </nav>
             </aside>
@@ -55,64 +55,83 @@
             <!-- Project sections -->
             <div class="projects-content">
 
-                <article class="project-section" id="Self-Improvement">
+                <article class="project-section" id="TelemetryUptrace">
                     <div class="project-section-header">
                         <div class="project-meta">
                             <span class="project-index">01</span>
                             <div class="project-badges">
-                                <span class="badge">Database</span>
-                                <span class="badge">Website</span>
-                                <span class="badge">Mental Health</span>
+                                <span class="badge">typeScript</span>
+                                <span class="badge">vue</span>
+                                <span class="badge">apm</span>
+                                <span class="badge">application monitoring</span>
+                                <span class="badge">golang</span>
+                                <span class="badge">observability</span>
+                                <span class="badge">opentelemetry</span>
+                                <span class="badge">tracing</span>
+                                <span class="badge">self-hosted</span>
+                                <span class="badge">...</span>
                             </div>
                         </div>
-                        <h2 class="project-section-title">Self-Improvement<br>Through Music</h2>
-                        <p class="project-section-desc">A curated platform using intentionally selected music to promote emotional regulation, discipline, and forward growth — not escapism.</p>
-                        <a href="https://selfimprovementthroughmusic.netlify.app/" target="_blank" class="project-link-btn">
+                        <h2 class="project-section-title">Telemetry Pipeline <br/>Management Tools</h2>
+                        <p class="project-section-desc">A cloud-based telemetry processing platform that collects, filters, routes, and monitors high-volume application logs and system events.</p>
+                        <button target="_blank" class="project-link-btn">
                             View Project <span>↗</span>
-                        </a>
+                        </button>
                     </div>
 
                     <div class="project-section-body">
                         <div class="project-stack">
                             <h3>// tech stack</h3>
                             <ul>
-                                <li><span class="stack-label">Frontend</span> HTML, CSS, Javascript</li>
-                                <li><span class="stack-label">Backend</span> Netlify, Supabase</li>
-                                <li><span class="stack-label">Database</span> PostgreSQL</li>
-                                <li><span class="stack-label">Other</span> Spotify Embed API, Github</li>
+                                <li><span class="stack-label">Frontend</span> Typrscript, Vue</li>
+                                <li><span class="stack-label">Backend</span> Go, AWS Lambda, Amazon API Gateway</li>
+                                <li><span class="stack-label">Database</span> PostgreSQL, Amazon RDS, Redis</li>
+                                <li><span class="stack-label">Other</span> OpenTelemetry, AWS SQS, AWS CloudWatch, Docker, GitHub Actions, Jest, Cypress, GitHub</li>
                             </ul>
                         </div>
 
                         <div class="project-writeup">
                             <div class="writeup-block">
                                 <h3>The Problem</h3>
-                                <p>Music strongly influences emotion and thought patterns, but during difficult periods people often default to content that reinforces avoidance, fixation, or emotional regression. I couldn't find music focused on genuine self-improvement — so I built a platform to share what I discovered and created a space where contributions can grow the playlist.</p>
+                                <p>Modern software systems generate large volumes of logs, metrics, traces, and event data, but engineering and operations teams often struggle to manage that telemetry efficiently across cloud, hybrid, and distributed environments. Without a structured pipeline, telemetry data can become expensive, noisy, difficult to search, and hard to route to the right monitoring or analytics tools. I wanted to build a platform that gives teams better control over how telemetry is collected, filtered, transformed, and delivered.</p>
                             </div>
                             <div class="writeup-block">
                                 <h3>The Solution</h3>
-                                <p>A manually curated, structured platform where songs are reviewed for emotional impact and long-term growth alignment before being added. The playlist dynamically pulls song data from Supabase with structured descriptions and triggers, while the recommendations page allows users to submit suggestions for intentional review — not automatic approval.</p>
+                                <p>I built a telemetry pipeline management platform that collects application logs and system events, applies configurable filtering and routing rules, and forwards structured data to downstream monitoring systems. The platform uses TypeScript, Node.js, RESTful APIs, AWS services, and a scalable backend architecture to support reliable ingestion and processing. It includes dashboard views for pipeline status, error tracking, delivery results, and operational visibility, helping teams manage telemetry with better control, observability, and resilience.</p>
                             </div>
                             <div class="writeup-block">
                                 <h3>Challenges</h3>
-                                <p>Designing a system that enforces intentional curation instead of automatic aggregation required careful planning of song metadata — descriptions, triggers, visual theming, and sort order — within a relational PostgreSQL schema. Dynamically rendering from Supabase while maintaining security, balancing emotional depth with clear scope boundaries, and building a calm, cohesive responsive design all added meaningful complexity.</p>
+                                <p>Designing the system required careful planning around high-volume data ingestion, secure API access, scalable backend services, and reliable event processing. I had to structure pipeline rules, routing logic, retry handling, and failure tracking so the platform could process telemetry consistently without losing important operational data. Building observability into the platform itself, tuning backend performance, securing API workflows, and keeping the user interface clear for complex pipeline activity added meaningful technical complexity.</p>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-section" id="StockAnalysis">
+                <article class="project-section" id="SecureAccessIdentity">
                     <div class="project-section-header">
                         <div class="project-meta">
                             <span class="project-index">02</span>
                             <div class="project-badges">
-                                <span class="badge">AI</span>
-                                <span class="badge">APIs</span>
-                                <span class="badge">Website</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">Responsive UI</span>
+                                <span class="badge">Java</span>
+                                <span class="badge">Java EE</span>
+                                <span class="badge">Spring Security</span>
+                                <span class="badge">OAuth 2.0</span>
+                                <span class="badge">REST APIs</span>
+                                <span class="badge">LDAP APIs</span>
+                                <span class="badge">OpenAM</span>
+                                <span class="badge">accounting</span>
+                                <span class="badge">Docker</span>
+                                <span class="badge">GitHub</span>
+                                <span class="badge">Maven</span>
+                                <span class="badge">Linux</span>
+                                <span class="badge">...</span>
                             </div>
                         </div>
-                        <h2 class="project-section-title">Stock<br>Analysis</h2>
-                        <p class="project-section-desc">An AI-powered stock analysis tool that combines financial data APIs with language model insights to help users make more informed investment decisions.</p>
-                        <a href="https://www.gradyalgirestockanalysis.com/" target="_blank" class="project-link-btn">
+                        <h2 class="project-section-title">AccessCore IAM System</h2>
+                        <p class="project-section-desc">A Java-based identity and access management platform that centralizes authentication, authorization, SSO, federation, policy enforcement, and zero trust access workflows for secure enterprise applications.</p>
+                        <a href="https://github.com/techlabs53/accesscore_iam" target="_blank" class="project-link-btn">
                             View Project <span>↗</span>
                         </a>
                     </div>
@@ -121,62 +140,171 @@
                         <div class="project-stack">
                             <h3>// tech stack</h3>
                             <ul>
-                                <li><span class="stack-label">Frontend</span> HTML, CSS, Javascript</li>
-                                <li><span class="stack-label">Backend</span> Python, Flask</li>
-                                <li><span class="stack-label">APIs</span> Financial data, OpenAI</li>
-                                <li><span class="stack-label">Other</span> Github</li>
+                                <li><span class="stack-label">Frontend</span> JavaScript, HTML, CSS, responsive web pages</li>
+                                <li><span class="stack-label">Backend</span> Java, Spring Security, Java EE, REST services, identity services</li>
+                                <li><span class="stack-label">APIs</span> OAuth 2.0, OpenID Connect, SAML, WebAuthn, REST APIs, LDAP APIs</li>
+                                <li><span class="stack-label">Other</span> OpenAM, OpenSSO, SSO, Zero Trust Architecture, AAA, access control, accounting, authentication</li>
                             </ul>
                         </div>
 
                         <div class="project-writeup">
                             <div class="writeup-block">
                                 <h3>The Problem</h3>
-                                <p>Retail investors are overwhelmed by financial data without clear context. Raw numbers from APIs are meaningless without analysis — and most tools are either too simple or too complex for someone learning to invest.</p>
+                                <p>Enterprise applications often need secure access across many users, systems, and environments, but managing authentication, authorization, federation, and single sign-on separately can create inconsistent security controls. Without a centralized IAM system, teams may struggle with user identity, policy enforcement, token validation, Active Directory integration, audit tracking, and secure access for internal and external applications. I wanted to build an access management platform that brings authentication, authorization, SSO, federation, and policy-based security into one structured system.</p>
                             </div>
                             <div class="writeup-block">
                                 <h3>The Solution</h3>
-                                <p>A web application that fetches real-time stock data and passes it through an AI layer to generate plain-English analysis, highlight key signals, and surface relevant context — making financial data accessible without oversimplifying it.</p>
+                                <p>AccessCore IAM System is an identity and access management platform inspired by OpenAM and OpenSSO concepts, focused on secure authentication, authorization, federation, and centralized access control. The system supports SSO, OAuth 2.0, OIDC, SAML, Kerberos, WebAuthn, Active Directory integration, policy management, token validation, session handling, and audit logging. I used Java as the primary backend language with JavaScript, HTML, and CSS for administrative and authentication interfaces, creating a secure IAM foundation for enterprise applications and zero trust access workflows.</p>
                             </div>
                             <div class="writeup-block">
                                 <h3>Challenges</h3>
-                                <p>Coordinating multiple external APIs with rate limits and inconsistent response structures required robust error handling. Prompting the AI to give useful, accurate, and appropriately hedged financial commentary — without hallucinating data — was an ongoing design challenge.</p>
+                                <p>The main challenge was designing a reliable identity platform that could support multiple authentication and federation standards while keeping access policies consistent across different applications. I had to organize complex IAM concepts such as AAA, OAuth 2.0, OIDC, SAML, Kerberos, WebAuthn, SSO, Active Directory, policy evaluation, session management, and authorization decisions into a clear and maintainable system. Balancing security, usability, federation workflows, token handling, audit logging, and zero trust architecture added meaningful complexity because every access decision needed to be secure, traceable, and predictable.</p>
                             </div>
                         </div>
                     </div>
                 </article>
 
                 <!-- Placeholder projects -->
-                <article class="project-section project-placeholder" id="p3">
-                    <div class="placeholder-inner">
-                        <span class="project-index">03</span>
-                        <p>Project coming soon</p>
+                <article class="project-section" id="CareFlowHealthOps">
+                    <div class="project-section-header">
+                        <div class="project-meta">
+                            <span class="project-index">03</span>
+                            <div class="project-badges">
+                                <span class="badge">Python</span>
+                                <span class="badge">Swagger</span>
+                                <span class="badge">Nix</span>
+                                <span class="badge">Shell</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">Makefile</span>
+                                <span class="badge">Dockerfile</span>
+                                <span class="badge">...</span>
+                            </div>
+                        </div>
+                        <h2 class="project-section-title">CareFlow HealthOps Platform</h2>
+                        <p class="project-section-desc">a Python-based healthcare workflow automation backend system designed to manage patient records, care coordination, consultation history, facility operations, provider workflows, and clinical task tracking through a secure and scalable digital health platform.</p>
+                        <a href="https://careapi.ohc.network/swagger" target="_blank" class="project-link-btn">
+                            View Project <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-section-body">
+                        <div class="project-stack">
+                            <h3>// tech stack</h3>
+                            <ul>
+                                <li><span class="stack-label">Frontend</span> HTML, Dajngo, Templates, Responsive UI, facility management dashboards</li>
+                                <li><span class="stack-label">Backend</span> Pyton, Django, Django Rest Framework, healthcare workflow services, facility operation services</li>
+                                <li><span class="stack-label">APIs</span> REST APIs, authentication, consultation history, facility management apis</li>
+                                <li><span class="stack-label">Other</span> Docker, Nix, Shell scripting, Makefile, GitHub, digital public goods</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-writeup">
+                            <div class="writeup-block">
+                                <h3>The Problem</h3>
+                                <p>Healthcare teams often manage patient intake, consultation history, care coordination, facility operations, and provider workflows across disconnected systems, spreadsheets, or manual processes. This can make it difficult to track patient status, coordinate clinical tasks, manage facility-level operations, and maintain clear healthcare records. I wanted to build a structured healthcare workflow automation platform that supports digital health operations with better visibility, consistency, and operational control.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>The Solution</h3>
+                                <p>CareFlow HealthOps Platform provides a centralized healthcare workflow system for managing patients, providers, facilities, consultation history, care coordination, and clinical task tracking. The platform uses Python as the primary backend language with Django and Django REST Framework to build secure healthcare services and REST APIs. PostgreSQL supports structured healthcare data, while Docker, Nix, Shell scripting, and Makefile workflows support development, deployment, and environment consistency for an open-source digital public goods style healthcare platform.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>Challenges</h3>
+                                <p>The main challenge was designing clean healthcare data models and secure APIs while keeping clinical workflows simple, scalable, and easy to manage.</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
-                <article class="project-section project-placeholder" id="p4">
-                    <div class="placeholder-inner">
-                        <span class="project-index">04</span>
-                        <p>Project coming soon</p>
+                <article class="project-section" id="Openship">
+                    <div class="project-section-header">
+                        <div class="project-meta">
+                            <span class="project-index">04</span>
+                            <div class="project-badges">
+                                <span class="badge">TypeScript</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">React</span>
+                                <span class="badge">MDX</span>
+                                <span class="badge">Lua</span>
+                                <span class="badge">Shell</span>
+                                <span class="badge">Docker</span>
+                                <span class="badge">GitHub</span>
+                                <span class="badge">GitHub Actions</span>
+                                <span class="badge">CI/CD pipelines</span>
+                                <span class="badge">release automation</span>
+                                <span class="badge">production monitoring</span>
+                                <span class="badge">...</span>
+                            </div>
+                        </div>
+                        <h2 class="project-section-title">Openship</h2>
+                        <p class="project-section-desc">A deployment automation system designed for CMS and eCommerce teams to manage website releases, serverless APIs, build pipelines, environment configuration, form workflows, integrations, and production monitoring through a reliable Git-based delivery process.</p>
+                        <a href="https://openship.io" target="_blank" class="project-link-btn">
+                            View Project <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="project-section-body">
+                        <div class="project-stack">
+                            <h3>// tech stack</h3>
+                            <ul>
+                                <li><span class="stack-label">Frontend</span> React, Typescript, Next.js, Tailwind CSS</li>
+                                <li><span class="stack-label">Backend</span> Node.js, TypeScript, Deployment orchestration services, agent communication services</li>
+                                <li><span class="stack-label">APIs</span> REST APIs, deployment APIs, build status APIs, release history APIs, webhook APIs</li>
+                                <li><span class="stack-label">Other</span> Self-hosted architecture, deployment agents, Docker, Github Integration, CI/CD, Shell Scripts, production logs</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-writeup">
+                            <div class="writeup-block">
+                                <h3>The Problem</h3>
+                                <p>CMS and eCommerce engineering teams often rely on fragmented deployment scripts, manual release steps, and inconsistent environment configurations, which increases delivery risk and makes production releases harder to control. Without a centralized deployment platform, teams can struggle to track build status, monitor deployment health, manage rollback workflows, and maintain visibility across self-hosted applications.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>The Solution</h3>
+                                <p>Built a TypeScript-based self-hosted deployment platform that centralizes application builds, release automation, deployment agents, environment configuration, and Git-based delivery workflows. The platform provides deployment tracking, build execution, webhook-driven automation, production log visibility, and rollback support, helping engineering teams deliver CMS and eCommerce applications with greater consistency, reliability, and operational control.</p>
+                            </div>
+                            <div class="writeup-block">
+                                <h3>Challenges</h3>
+                                <p>The main challenge was designing an agent-based deployment architecture that could securely coordinate builds, deployment execution, environment variables, status updates, logs, and rollback workflows across self-hosted infrastructure. I also had to balance automation, reliability, and maintainability while ensuring the platform could support repeatable releases, clear operational visibility, and scalable deployment workflows.</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
+                <article class="project-section" id="CaseStudy">
+                    <div class="project-section-header">
+                        <div class="project-meta">
+                            <span class="project-index">05</span>
+                            <div class="project-badges">
+                                <span class="badge">AI</span>
+                                <span class="badge">NLP</span>
+                                <span class="badge">prompt engineering</span>
+                                <span class="badge">text classification</span>
+                                <span class="badge">data analysis</span>
+                                <span class="badge">...</span>
+                            </div>
+                        </div>
+                        <h2 class="project-section-title">A ChatGPT-enabled natural language processing framework to study domain-specific user reviews</h2>
+                    </div>
 
-                <article class="project-section project-placeholder" id="p5">
-                    <div class="placeholder-inner">
-                        <span class="project-index">05</span>
-                        <p>Project coming soon</p>
+                    <div>
+                        <div class="project-writeup">
+                            <div class="writeup-block">
+                                <p>ChatReview is an AI-assisted natural language processing framework designed to analyze domain-specific user reviews and convert unstructured feedback into meaningful insights. The framework uses ChatGPT to identify sentiment, recurring topics, user concerns, feature requests, and experience patterns that are often difficult to capture through traditional keyword-based review analysis.</p>
+                                <p class="mt-20">The system focuses on helping researchers and product teams understand large volumes of review data more efficiently by organizing user feedback into structured categories. It supports review preprocessing, prompt-based classification, theme extraction, sentiment interpretation, and summary generation, making it easier to evaluate customer needs, product weaknesses, and improvement opportunities.</p>
+                                <p class="mt-20">It highlights how ChatGPT-enabled workflows can improve review analysis by adding context-aware interpretation, domain-specific reasoning, and scalable insight generation. It demonstrates practical experience with NLP, prompt engineering, text classification, review mining, qualitative analysis, and AI-powered data interpretation.</p>
+                            </div>
+                        </div>
                     </div>
                 </article>
-
             </div>
         </div>
 
         <footer>
             <span>Built with HTML, CSS, JavaScript, Swiper.</span>
             <div class="footer-socials">
-                <a href="https://github.com/gradyalgire" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/grady-algire-abb44a265/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/techlabs53" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/marco-gamboa-48a4343c7" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
-            <span>© 2026 Grady Algire. All rights reserved.</span>
+            <span>© 2026 Marco Gamboa. All rights reserved.</span>
         </footer>
     </main>
 
