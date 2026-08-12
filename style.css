@@ -94,6 +94,11 @@ header a.active {
     background-color: var(--accent-active);
 }
 
+.sub-title {
+    text-align: center;
+    font-size: 32px;
+}
+
 .header-left {
     display: flex;
     align-items: center;
