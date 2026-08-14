@@ -41,8 +41,8 @@ const themes = {
 };
 
 const themeLabels = {
-    dark:  { name: 'Dark',          desc: 'Default',         icon: '◐' },
-    light: { name: 'Light',         desc: 'Clean & bright',  icon: '○' },
+    light: { name: 'Light',         desc: 'default',  icon: '○' },
+    dark:  { name: 'Dark',          desc: 'Clean & Dark',         icon: '◐' },
     grady: { name: "Grady's Theme", desc: 'Profile Colors', icon: '★' },
 };
 
@@ -135,7 +135,7 @@ function buildSettingsUI() {
     }
 
     // apply saved or default theme
-    const saved = localStorage.getItem('portfolio-theme') || 'dark';
+    const saved = localStorage.getItem('portfolio-theme') || 'light';
     applyTheme(saved);
 }
 
